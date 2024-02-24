@@ -8,13 +8,17 @@
     width: 100%;
     height: auto;    
     cursor: pointer;
+    transform: scale(1);
+    
+   
 }
 
 .imagem:hover{
-    zoom: 200%;
-    position: absolute;
-    top: 20%;
-    left: 0;
+    transform: scale(1.5);   
+    transition: transform .25s, visibility .25s ease-in;
+    transform-origin: 0 0;
+    z-index: 99999999;
+    position: relative;    
 }
 
 .work{

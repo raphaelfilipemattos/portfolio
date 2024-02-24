@@ -4,6 +4,7 @@ import Image from "next/image";
 import style from "./trabalho.module.css"
 import { useContext } from "react";
 import IdiomaService from "@/app/services/IdiomaServcice";
+import Link from "next/link";
 
 
 export default function Trabalhos(){
@@ -36,13 +37,15 @@ export default function Trabalhos(){
                                         {job.fotos.map((foto, indexFoto) => {
                                             return (
                                                 <li key={indexFoto}>
-                                                    <Image 
-                                                      src={foto}
-                                                      alt="Work"
-                                                      width={500}
-                                                      height={500}
-                                                      className={style.imagem}
-                                                       />
+                                                    <Link href={foto} target="_blanck" >
+                                                        <Image 
+                                                        src={foto}
+                                                        alt="Work"
+                                                        width={500}
+                                                        height={500}
+                                                        className={style.imagem}
+                                                        />
+                                                     </Link>  
                                                 </li>
                                             )
                                         })}
