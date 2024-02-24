@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio Raphael Mattos",
-  description: "Professional apresentention Raphael Mattos | Dev ",
+  description: "Professional apresentention Raphael Mattos | Dev ",  
 };
 
 export default function RootLayout({ children }) {    
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>  
-        <script src= "/assets/js/bootstrap.min.js" defer/>
+        <script src= "/assets/js/bootstrap.min.js" defer/>        
       </head>
       <body className={inter.className}>
          {children}

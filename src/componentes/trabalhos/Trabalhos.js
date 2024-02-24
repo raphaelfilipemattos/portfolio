@@ -39,6 +39,7 @@ export default function Trabalhos(){
                                                 <li key={indexFoto}>
                                                     <Link href={foto} target="_blanck" >
                                                         <Image 
+                                                        
                                                         src={foto}
                                                         alt="Work"
                                                         width={500}
