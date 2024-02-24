@@ -1,0 +1,22 @@
+.trabalho{
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.imagem{
+    width: 100%;
+    height: auto;    
+    cursor: pointer;
+}
+
+.imagem:hover{
+    zoom: 200%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.work{
+    margin-bottom: 0.5em;
+}

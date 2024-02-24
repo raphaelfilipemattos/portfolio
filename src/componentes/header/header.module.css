@@ -1,0 +1,29 @@
+.nav{
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(177,213,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(177,213,255,1) 100%);
+background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(177,213,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#b1d5ff",GradientType=1);
+}
+.nav a{
+    color: white;
+    font-weight: 700;
+    font-family: ui-sans-serif;
+    font-size: 14pt;
+    scroll-behavior: smooth;
+}
+
+.nav a:hover{
+    color: rgba(250, 177, 42, 0.966);
+}
+
+.foto_perfil{
+    border-radius: 3rem;
+}
+
+
+.bandeira{
+    width: 40px;
+    height: 40px;
+}
+

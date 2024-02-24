@@ -1,0 +1,14 @@
+.lista_skills{
+    
+}
+
+.lista_skills li{
+    word-break: keep-all;
+    color: white;
+    list-style: "->";
+    padding: 0.5em;
+    margin: 0.7em;
+    width: 33%;
+    float: left;
+    
+}

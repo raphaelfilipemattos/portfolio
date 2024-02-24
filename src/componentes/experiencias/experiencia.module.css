@@ -1,0 +1,44 @@
+.experiencias{
+    max-height: 80vh;
+    overflow-y: scroll;
+
+}
+
+.div_tecnologias{
+    width: 40rem;
+}
+.lista_tecnologias{
+    list-style: circle;
+    font-size: 11pt;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    max-width: 40%;
+}
+.lista_tecnologias li{
+    margin-left: 2rem;
+}
+
+.experiencias_item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.lista_atividade{
+ 
+    padding: 0.5em;
+}
+.atividade{
+    word-break: keep-all;
+    max-width: 20rem;
+    text-align: justify;
+    margin: 0.2em;
+}
