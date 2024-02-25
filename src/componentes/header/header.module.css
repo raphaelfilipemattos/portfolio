@@ -9,9 +9,11 @@
     scroll-behavior: smooth;
 }
 
-.nav a:hover{
-    color: rgba(250, 177, 42, 0.966);
-}
+
+.nav a:hover {
+    box-shadow: 0 0 5px #6f6f6f;
+    text-shadow: 0 0 5px #fffffd;
+  }
 
 .foto_perfil{
     border-radius: 3rem;
