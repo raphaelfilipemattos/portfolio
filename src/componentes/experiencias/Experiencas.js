@@ -25,7 +25,7 @@ export default function Experiencias(){
 
     return (
         <Secao>
-            <div className={style.experiencias+" card"} id="experiencias">
+            <div className={" card"} id="experiencias">
                 <div className="row m-auto p-3">
                     <h2>{textos[idioma].titulo}</h2>
                 </div>   

@@ -19,11 +19,11 @@ export default function Formacao(){
                     <h2>{titulo[idioma]}</h2>
                 </div>                
                 <div className="card-body">
-                    <ul className={style.lista}>
+                    <ul >
                         {formacao.map((formacaoItem, key) => {
                             return (
                                 <li key={key}>
-                                    <span className={style.escola} >{formacaoItem.escola}</span> : <span  className={style.curso} >{formacaoItem.curso} </span>
+                                    <span className={style.escola} >{formacaoItem.escola}</span> : <span  >{formacaoItem.curso} </span>
                                 </li>
                             )
                         })}
