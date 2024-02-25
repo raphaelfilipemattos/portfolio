@@ -4,6 +4,8 @@ import "./globals.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Footer from "@/componentes/footer/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+
 import Header from "@/componentes/header/Header";
 import Formacao from "@/componentes/formacao/Formacao";
 import Trabalhos from "@/componentes/trabalhos/Trabalhos";
@@ -37,6 +39,7 @@ export default function RootLayout({ children }) {
           </main>
          
          <SpeedInsights />
+         <Analytics/>
          <Footer/>
       </body>
       
