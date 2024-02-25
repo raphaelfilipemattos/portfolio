@@ -7,16 +7,27 @@ import IdiomaService from "@/app/services/IdiomaServcice";
 export default function Experiencias(){
     const {idioma} = useContext(IdiomaService);
     const experienias = ExperienciasModel(idioma);
-    const titulo = {
-        "PT": "Experiências profisionais",
-        "EN" : "Professional experiences"
+    const textos = {
+        "PT": {
+               titulo: "Experiências profisionais",
+               periodo: "Período",
+               atividade: "Atividades",
+               tecnologias: "Tecnologias usadas"
+            },
+        "EN" : {
+                titulo:  "Professional experiences",
+                periodo: "Period",
+                atividade: "Performed activities",
+                tecnologias: "Technologies used"
+              }
+
     }
 
     return (
         <Secao>
             <div className={style.experiencias+" card"} id="experiencias">
                 <div className="row m-auto p-3">
-                    <h1>{titulo[idioma]}</h1>
+                    <h1>{textos[idioma].titulo}</h1>
                 </div>   
                 <div className="card-body d-flex  flex-column flex-wrap  align-content-center">
                     {experienias.map((experieniaItem, key) => {                    
@@ -24,13 +35,13 @@ export default function Experiencias(){
                             <div key={key} className="mb-2 card">
                                 <div className="row card-body m-auto p-4">
                                     <h3 className="fw-semibold">{experieniaItem.empresa}</h3>
-                                    <h6 className="fs-6">Período {experieniaItem.datainicial} -&gt; {experieniaItem.datafinal} </h6>
+                                    <h6 className="fs-6">{textos[idioma].periodo} {experieniaItem.datainicial} -&gt; {experieniaItem.datafinal} </h6>
                                 </div>
                                 <div className="row card-body p-3 m-auto ">    
                                     <div className="col-md-6">
                                         
                                         <div className="row card-body">
-                                            <h5>Tecnologias usadas</h5>
+                                            <h5>{textos[idioma].tecnologias}</h5>
                                             <ul className={style.lista_tecnologias}>                                        
                                                 {experieniaItem.tecnologias.split(";").map( (tec, key)=>{                                            
                                                     return (<li key={key}>
@@ -43,7 +54,7 @@ export default function Experiencias(){
                                         </div>
                                     </div>    
                                     <div className="col-md-6 card-body">
-                                        <h4>Atividades</h4>
+                                        <h4>{textos[idioma].atividade}</h4>
                                         <ul className={style.lista_atividade}>
                                             {experieniaItem.atividades.split(";").map( (atv, key)=>{                                            
                                                     return (<li className={style.atividade} key={key}>

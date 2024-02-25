@@ -25,7 +25,7 @@ export default function Header({children}){
                 descricao: "Trabalhos realizados"
             },
             {
-                link: "experiencias",
+                link: "/#experiencias",
                 descricao: "Experiências profisionais"
             }
         ]
@@ -42,7 +42,7 @@ export default function Header({children}){
                 descricao: "Works"
             },
             {
-                link: "experiencias",
+                link: "/#experiencias",
                 descricao: "Professional experiences"
             }
         ]
