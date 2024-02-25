@@ -27,6 +27,7 @@
 
 .hero h1, .hero h3{
     text-align: center;
+    color: #ffffff!important;
 }
 
 .lista_hero{
@@ -39,3 +40,6 @@
     
 }
 
+.email{
+    word-break: break-all;
+}

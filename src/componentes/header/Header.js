@@ -68,7 +68,7 @@ export default function Header({children}){
                         />
                     </Link>
                     <span className="navbar-text">
-                        <ul className={style.lista_idiomas +" d-flex direcion-column"}>
+                        <ul className={style.lista_idiomas +" d-flex direcion-column "}>
                             {IdiomaModel().map(idioma => {
 
                                 return (<li key={idioma.sigla}>
@@ -95,7 +95,7 @@ export default function Header({children}){
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav m-auto mb-2 mb-lg-0">
                         {
                             menus[idioma].map((menu,index) => {
                                 return (

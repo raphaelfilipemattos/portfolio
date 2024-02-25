@@ -51,6 +51,34 @@ export default function Hero(){
         <div className={style.hero}>     
             <h1>Raphael Filipe Mattos</h1>  
             <div className={style.contato}>
+                <div>
+                    <Link
+                        href="https://www.linkedin.com/in/raphael-mattos-70124823a/"
+                        target="_blank"
+                        >
+                            <Image
+                            src={"/assets/img/linkedin.png"}
+                            alt="Linkedin"
+                            title={facaContatoLinkedin[idioma]}
+                            width={25}
+                            height={25}
+                            />
+                    </Link>                 
+                </div>
+                <div>
+                    <Link
+                        href="https://github.com/raphaelfilipemattos"
+                        target="_blank"
+                        >
+                            <Image
+                            src={"/assets/img/git.png"}
+                            alt="Github"
+                            title="Github"
+                            width={25}
+                            height={25}
+                            />
+                    </Link>                 
+                </div>
                <div>
                     <Link
                        href={"HTTPS://wa.me/5521985892803"}
@@ -66,20 +94,7 @@ export default function Hero(){
                     </Link>       
                       <span>+ 55 21 98589-2803</span>  
                 </div>                       
-                <div>
-                    <Link
-                    href="https://www.linkedin.com/in/raphael-mattos-70124823a/"
-                    target="_blank"
-                    >
-                        <Image
-                        src={"/assets/img/linkedin.png"}
-                        alt="Linkedin"
-                        title={facaContatoLinkedin[idioma]}
-                        width={25}
-                        height={25}
-                        />
-                    </Link>                 
-                </div>       
+                       
                 <div>                    
                     <Link
                     href="mailto:desenvolvimentohrm@gmail.com"                    
@@ -91,7 +106,7 @@ export default function Hero(){
                         width={25}
                         height={25}
                         />
-                        <span>desenvolvimentohrm@gmail.com</span>
+                        <span className={style.email}>desenvolvimentohrm@gmail.com</span>
                     </Link>                 
                 </div>  
             </div>               

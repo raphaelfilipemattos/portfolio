@@ -1,8 +1,8 @@
 .nav{
-    background-color: rgb(132, 183, 241) !important;
+    background-color: #073568!important;
 }
 .nav a{
-    color: rgb(0, 0, 0);
+    color: rgb(255 254 254);
     font-weight: 700;
     font-family: ui-sans-serif;
     font-size: 14pt;
@@ -12,7 +12,7 @@
 
 .nav a:hover {
     box-shadow: 0 0 5px #6f6f6f;
-    text-shadow: 0 0 5px #fffffd;
+    color: #ffb733;
   }
 
 .foto_perfil{

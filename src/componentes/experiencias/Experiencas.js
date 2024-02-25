@@ -9,13 +9,13 @@ export default function Experiencias(){
     const experienias = ExperienciasModel(idioma);
     const textos = {
         "PT": {
-               titulo: "Experiências profisionais",
+               titulo: "Experiências Profisionais",
                periodo: "Período",
                atividade: "Atividades",
                tecnologias: "Tecnologias usadas"
             },
         "EN" : {
-                titulo:  "Professional experiences",
+                titulo:  "Professional Experiences",
                 periodo: "Period",
                 atividade: "Performed activities",
                 tecnologias: "Technologies used"
@@ -29,7 +29,7 @@ export default function Experiencias(){
                 <div className="row m-auto p-3">
                     <h2>{textos[idioma].titulo}</h2>
                 </div>   
-                <div className="card-body d-flex  flex-column flex-wrap  align-content-center">
+                <div className=" d-flex  flex-column flex-wrap  align-content-center">
                     {experienias.map((experieniaItem, key) => {                    
                         return (
                             <div key={key} className="mb-2 card">
