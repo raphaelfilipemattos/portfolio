@@ -1,12 +1,8 @@
 .nav{
-    background: rgb(0,0,0);
-background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(177,213,255,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(177,213,255,1) 100%);
-background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(177,213,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#b1d5ff",GradientType=1);
+    background-color: rgb(132, 183, 241) !important;
 }
 .nav a{
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     font-family: ui-sans-serif;
     font-size: 14pt;

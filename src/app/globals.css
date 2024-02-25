@@ -11,22 +11,17 @@ li{
 }
 
 body{
-  background: rgb(85,32,182);
-  background: -moz-radial-gradient(circle, rgba(85,32,182,1) 0%, rgba(73,73,195,1) 35%, rgba(173,161,249,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(85,32,182,1) 0%, rgba(73,73,195,1) 35%, rgba(173,161,249,1) 100%);
-  background: radial-gradient(circle, rgba(85,32,182,1) 0%, rgba(73,73,195,1) 35%, rgba(173,161,249,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5520b6",endColorstr="#ada1f9",GradientType=1);
+  background-image: url("/assets/img/fundo.jpg");
 }
 
 .card{
-  background: rgb(27,27,27);
-  background: -moz-linear-gradient(180deg, rgba(27,27,27,0.9220063025210083) 19%, rgba(45,43,43,0.9724264705882353) 50%, rgba(126,126,126,0.9752275910364145) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(27,27,27,0.9220063025210083) 19%, rgba(45,43,43,0.9724264705882353) 50%, rgba(126,126,126,0.9752275910364145) 100%);
-  background: linear-gradient(180deg, rgba(27,27,27,0.9220063025210083) 19%, rgba(45,43,43,0.9724264705882353) 50%, rgba(126,126,126,0.9752275910364145) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1b1b",endColorstr="#7e7e7e",GradientType=1);
+  background-color:rgb(35 35 35 / 91%)!important;
+  border-radius: 0!important;
+  box-shadow: -1px 2px 5px 1px #9b9b9b;
 }
 
 .card-body,h1 {
-  color: #eed2f3!important;
+  color: #ffffff!important;
+  
 }
 

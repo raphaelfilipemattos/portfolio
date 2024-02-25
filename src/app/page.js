@@ -1,18 +1,9 @@
-"use client"
-import Formacao from "@/componentes/formacao/Formacao";
-import Experiencias from "@/componentes/experiencias/Experiencas";
-import Trabalhos from "@/componentes/trabalhos/Trabalhos";
-import Header from "@/componentes/header/Header";
-
-
+export const metadata = {
+  title: "Portfolio Raphael Mattos",
+  description: "Professional apresentention Raphael Mattos | Dev ",  
+};
 export default function Home() { 
   return (
-    <main className="container-fluid">      
-          <Header>            
-            <Formacao />
-            <Trabalhos/>
-            <Experiencias/>
-          </Header>
-    </main>
+  <></>
   );
 }

@@ -7,7 +7,6 @@ import IdiomaService from "@/app/services/IdiomaServcice";
 import { useContext, useState } from "react";
 import Hero from "../hero/Hero";
 
-
 export default function Header({children}){        
     const [idioma, setIdioma] = useState("PT");
     
@@ -18,15 +17,15 @@ export default function Header({children}){
     function MenusPT(){
         return [
             {
-                link: "#formacao",
+                link: "/#formacao",
                 descricao: "Formação Acadêmica"
             },
             {
-                link: "#trabalhos",
+                link: "/#trabalhos",
                 descricao: "Trabalhos realizados"
             },
             {
-                link: "#experiencias",
+                link: "experiencias",
                 descricao: "Experiências profisionais"
             }
         ]
@@ -35,15 +34,15 @@ export default function Header({children}){
     function MenusEN(){
         return [
             {
-                link: "#formacao",
+                link: "/#formacao",
                 descricao: "Academic Education"
             },
             {
-                link: "#trabalhos",
+                link: "/#trabalhos",
                 descricao: "Works"
             },
             {
-                link: "#experiencias",
+                link: "experiencias",
                 descricao: "Professional experiences"
             }
         ]
