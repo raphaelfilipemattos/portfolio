@@ -55,8 +55,8 @@ export default function Header({children}){
     }
 
     return (
-        <>
-            <nav className={style.nav+ " navbar navbar-expand-lg bg-body-tertiary"}>
+        <>        
+            <nav className={style.nav+ " navbar navbar-expand-lg bg-body-tertiary"}>                
                 <div className="container-fluid">
                     <Link className="navbar-brand" href="/">
                         <Image 
@@ -67,24 +67,8 @@ export default function Header({children}){
                             alt="Perfil"
                         />
                     </Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarText">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        {
-                            menus[idioma].map((menu,index) => {
-                                return (
-                                    <li className="nav-item" key={index}>
-                                        <a className="nav-link" href={menu.link}>{menu.descricao}</a>
-                                    </li>
-                                )
-                            })
-                        }                      
-                    
-                    </ul>                
                     <span className="navbar-text">
-                        <ul className="d-flex direcion-column">
+                        <ul className={style.lista_idiomas +" d-flex direcion-column"}>
                             {IdiomaModel().map(idioma => {
 
                                 return (<li key={idioma.sigla}>
@@ -107,6 +91,23 @@ export default function Header({children}){
                             })} 
                         </ul>   
                     </span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarText">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        {
+                            menus[idioma].map((menu,index) => {
+                                return (
+                                    <li className="nav-item" key={index}>
+                                        <a className="nav-link" href={menu.link}>{menu.descricao}</a>
+                                    </li>
+                                )
+                            })
+                        }                      
+                    
+                    </ul>                
+                    
                     </div>
                 </div>
                 </nav>
