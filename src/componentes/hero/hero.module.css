@@ -25,7 +25,7 @@
     margin: 0.2em;
 }
 
-.hero h1{
+.hero h1, .hero h3{
     text-align: center;
 }
 

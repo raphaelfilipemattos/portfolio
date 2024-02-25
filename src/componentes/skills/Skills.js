@@ -20,7 +20,7 @@ export default function Skills(){
     
     return (
         <div>  
-            <h1>Skills</h1>          
+            <h3>Skills</h3>          
             
                 <ul className={style.lista_skills}>
                     {tecnologias.map((tecnologia, index) => {

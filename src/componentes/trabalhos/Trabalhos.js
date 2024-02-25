@@ -19,7 +19,7 @@ export default function Trabalhos(){
         <Secao>
             <div className={style.trabalho+ " card"} id="trabalhos">
                 <div className="row text-center">
-                    <h1>{titulo[idioma]}</h1>
+                    <h2>{titulo[idioma]}</h2>
                 </div>
                 <div className="card-body">
                     {jobs.map((job, index) => {

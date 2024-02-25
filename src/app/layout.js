@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>  
-        <title>Raphael Mattos | Dev</title>
+        <title>Raphael Mattos | Software solutions</title>
         <meta name="description" content="Software solutions for your company. I make websites and/or software to make your life easier." />
         <meta name="googlebot" content="all" />
         <meta name="robots" content="all"/>

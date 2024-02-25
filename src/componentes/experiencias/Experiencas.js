@@ -27,7 +27,7 @@ export default function Experiencias(){
         <Secao>
             <div className={style.experiencias+" card"} id="experiencias">
                 <div className="row m-auto p-3">
-                    <h1>{textos[idioma].titulo}</h1>
+                    <h2>{textos[idioma].titulo}</h2>
                 </div>   
                 <div className="card-body d-flex  flex-column flex-wrap  align-content-center">
                     {experienias.map((experieniaItem, key) => {                    
