@@ -27,13 +27,13 @@ export default function Experiencias(){
         <Secao>
             <div className={" card"} id="experiencias">
                 <div className="row m-auto p-3">
-                    <h2>{textos[idioma].titulo}</h2>
+                    <h2 className="titulo">{textos[idioma].titulo}</h2>
                 </div>   
                 <div className=" d-flex  flex-column flex-wrap  align-content-center">
                     {experienias.map((experieniaItem, key) => {                    
                         return (
                             <div key={key} className="mb-2 card">
-                                <div className="row card-body m-auto p-4">
+                                <div className="row card-body m-auto p-4 text-center">
                                     <h3 className="fw-semibold">{experieniaItem.empresa}</h3>
                                     <h6 className="fs-6">{textos[idioma].periodo} {experieniaItem.datainicial} -&gt; {experieniaItem.datafinal} </h6>
                                 </div>

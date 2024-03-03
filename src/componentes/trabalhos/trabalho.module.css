@@ -20,5 +20,9 @@
 }
 
 .work{
-    margin-bottom: 0.5em;
+    border-bottom: 6px solid #d1d1d1;
+}
+
+.titulo{
+    font-weight: 600;
 }

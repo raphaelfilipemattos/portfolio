@@ -16,7 +16,7 @@ export default function Formacao(){
         <Secao>
             <div className="card" id="formacao">
                 <div className="row m-auto">
-                    <h2>{titulo[idioma]}</h2>
+                    <h2 className="titulo">{titulo[idioma]}</h2>
                 </div>                
                 <div className="card-body">
                     <ul >

@@ -12,19 +12,28 @@ li{
 
 body{
   background-image: url("/assets/img/fundo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .card{
   /*background-color:rgb(107 107 107)!important; */
-  background-color:#dedddf!important;
   border-radius: 0!important;
   box-shadow: -1px 2px 5px 1px #9b9b9b;
-  opacity: 0.93;
+  opacity: 0.80;
+  background-color: white !important;
 }
 
 .card-body, h1,h2, h3 {
   /*color: #ffffff!important;*/
-  color: black!important;
-  
+  color: black!important;  
 }
 
+.titulo{
+  padding: 0.5em;
+  font-weight: 700;
+  font-family: "Verdana, Geneva, Tahoma, sans-serif";
+
+}

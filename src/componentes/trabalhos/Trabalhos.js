@@ -19,14 +19,14 @@ export default function Trabalhos(){
         <Secao>
             <div className={style.trabalho+ " card"} id="trabalhos">
                 <div className="row text-center">
-                    <h2>{titulo[idioma]}</h2>
+                    <h2 className="titulo">{titulo[idioma]}</h2>
                 </div>
                 <div className="">
                     {jobs.map((job, index) => {
                         return (
-                            <div className=" " key={index}>
+                            <div className={style.work} key={index}>
                             <div className={" card-body row"} >                                
-                                <div  className="col-md-2">
+                                <div  className={style.titulo+ " col-md-2"}>
                                     {job.titulo}
                                 </div>    
                                 <div  className="col-md-3">
@@ -36,7 +36,7 @@ export default function Trabalhos(){
                                     <ul>
                                         {job.fotos.map((foto, indexFoto) => {
                                             return (
-                                                <li key={indexFoto}>
+                                                <li key={indexFoto} >
                                                     <Link href={foto} target="_blanck" >
                                                         <Image 
                                                         
